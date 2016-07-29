@@ -1,0 +1,7 @@
+Only averaged (mean) and standard deviation fields are kept.
+Field names prefixed with "time." are time domain signals.
+Field names prefixed with "FFT." were transformed with a fast Fourier
+Transform.
+Field names beginning with "angle." represent the angle measures between
+two vectors.
+
