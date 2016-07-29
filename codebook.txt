@@ -1,7 +1,21 @@
-Only averaged (mean) and standard deviation fields are kept.
-Field names prefixed with "time." are time domain signals.
-Field names prefixed with "FFT." were transformed with a fast Fourier
-Transform.
-Field names beginning with "angle." represent the angle measures between
-two vectors.
+Experiments were carried out on 30 volunteers representd by numbers in
+the "Subject" field. 
+The experiments were run with subjects performing six activities
+given in the "Activities" field. Activies are:
+    WALKING
+    WALKING_UPSTAIRS
+    WALKING_DOWNSTAIRS
+    SITTING
+    STANDING
+    LAYING
+
+For each subject/activity measurements were taken with a Samsung phone
+using the accelerometer and gyros. The data in the tidy data file are
+a conglomeration of measurements taken during training and testing.
+Only the averaged (mean) and standard deviation (std) fields appear in the
+file. Measurements are taken along three axes, represented by an "X", "Y"
+or "Z" as the suffix of the field names. Field names prefixed with "time."
+are time domain signals. Field names prefixed with "FFT." represent data
+that wes transformed with a fast Fourier Transform. Field names beginning
+with "angle." represent the angle measurements between two axes.
 
