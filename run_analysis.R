@@ -76,7 +76,10 @@ X1 <- X[ , ms]
 # And rename them
 colnames(X1) <- nm[,2]
 
-## Merge them all together and
+## Merge them all together and find averages by Subject, Activity
 ## This becomes our tidy data set:
 subj_act_data <- data.frame(subj_activity, X1)
+tidy_data <- aggregate(. ~ Subject + Activity, subj_act_data, mean)
 
+## And sort it
+tidy_data <- tidy_data[order(tidy_data$Subject, tidy_data$Activity), ]
